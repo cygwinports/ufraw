@@ -1,0 +1,8 @@
+category: Gnome Graphics
+requires: cygwin glib2 gtk2-x11 lcms libjpeg62 libtiff5
+sdesc: "Utility to read and manipulate digital camera RAW images"
+ldesc: "UFRaw is a utility to read and manipulate raw images from digital
+cameras. It can be used by itself or as a GIMP plug-in. It reads raw
+images using Dave Coffin's raw conversion utility DCRaw. And it supports
+basic color management using Little CMS, allowing the user to apply
+color profiles."
