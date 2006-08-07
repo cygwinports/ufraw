@@ -7,26 +7,26 @@ basic color management using Little CMS, allowing the user to apply
 color profiles.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  gimp2-2.2.11-1	(for the gimp plugin only)
-  glib2-2.8.6-1
-  gtk2-x11-2.8.17-1
+  cygwin-1.5.21-1
+  gimp2-2.2.12-1	(for the gimp plugin only)
+  glib2-2.10.3-1
+  gtk2-x11-2.8.20-1
   lcms-1.14-1
   libjpeg62-6b-11
-  libtiff5-3.7.3-1
+  libtiff5-3.8.2-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
+  cygwin-1.5.21-1
+  autoconf2.5-2.59-2
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.1.93-1
+  binutils-20060709-1
+  cygport-0.2.5-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  make-3.80-1
+  make-3.81-1
   pkg-config-0.20-1
-  sed-4.1.4-1
+  sed-4.1.5-1
 
 Canonical website:
   http://ufraw.sourceforge.net/
@@ -37,16 +37,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ufraw-0.8.1-X-src.tar.bz2
+  unpack ufraw-0.9-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ufraw-0.8.1-X.cygport all
+  cygport ./ufraw-0.9-X.cygport all
 
 This will create:
-  /usr/src/ufraw-0.8.1-X-src.tar.bz2
-  /usr/src/ufraw-0.8.1-X.tar.bz2
-  /usr/src/gimp2-ufraw-0.8.1-X.tar.bz2
+  /usr/src/ufraw-0.9-X-src.tar.bz2
+  /usr/src/ufraw-0.9-X.tar.bz2
+  /usr/src/gimp2-ufraw-0.9-X.tar.bz2
 
 -------------------------------------------
 
@@ -58,12 +58,11 @@ Files included in the binary package:
   /usr/bin/ufraw-exif.exe
   /usr/bin/ufraw.exe
   /usr/share/applications/ufraw.desktop
-  /usr/share/doc/Cygwin/ufraw-0.8.1.README
-  /usr/share/doc/ufraw-0.8.1/COPYING
-  /usr/share/doc/ufraw-0.8.1/ChangeLog
-  /usr/share/doc/ufraw-0.8.1/INSTALL
-  /usr/share/doc/ufraw-0.8.1/README
-  /usr/share/doc/ufraw-0.8.1/TODO
+  /usr/share/doc/Cygwin/ufraw-0.9.README
+  /usr/share/doc/ufraw-0.9/COPYING
+  /usr/share/doc/ufraw-0.9/INSTALL
+  /usr/share/doc/ufraw-0.9/README
+  /usr/share/doc/ufraw-0.9/TODO
   /usr/share/man/man1/ufraw.1.gz
   /usr/share/pixmaps/ufraw.png
 
@@ -74,6 +73,9 @@ Files included in the GIMP plugin package:
 ------------------
 
 Port Notes:
+
+----- version 0.9-1 -----
+Version bump.
 
 ----- version 0.8.1-1 -----
 Version bump.
