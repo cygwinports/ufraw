@@ -7,20 +7,21 @@ basic color management using Little CMS, allowing the user to apply
 color profiles.
 
 Runtime requirements:
-  cygwin-1.5.21-1
+  cygwin-1.5.21-2
   gimp2-2.2.12-1	(for the gimp plugin only)
   glib2-2.10.3-1
   gtk2-x11-2.8.20-1
   lcms-1.14-1
+  libexiv2_011-0.11-1
   libjpeg62-6b-11
   libtiff5-3.8.2-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.21-1
-  autoconf2.5-2.59-2
+  cygwin-1.5.21-2
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  binutils-20060709-1
+  binutils-20060817-1
   cygport-0.2.5-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
@@ -37,16 +38,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ufraw-0.9-X-src.tar.bz2
+  unpack ufraw-0.10-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ufraw-0.9-X.cygport all
+  cygport ./ufraw-0.10-X.cygport all
 
 This will create:
-  /usr/src/ufraw-0.9-X-src.tar.bz2
-  /usr/src/ufraw-0.9-X.tar.bz2
-  /usr/src/gimp2-ufraw-0.9-X.tar.bz2
+  /usr/src/ufraw-0.10-X-src.tar.bz2
+  /usr/src/ufraw-0.10-X.tar.bz2
+  /usr/src/gimp2-ufraw-0.10-X.tar.bz2
 
 -------------------------------------------
 
@@ -58,11 +59,11 @@ Files included in the binary package:
   /usr/bin/ufraw-exif.exe
   /usr/bin/ufraw.exe
   /usr/share/applications/ufraw.desktop
-  /usr/share/doc/Cygwin/ufraw-0.9.README
-  /usr/share/doc/ufraw-0.9/COPYING
-  /usr/share/doc/ufraw-0.9/INSTALL
-  /usr/share/doc/ufraw-0.9/README
-  /usr/share/doc/ufraw-0.9/TODO
+  /usr/share/doc/Cygwin/ufraw-0.10.README
+  /usr/share/doc/ufraw-0.10/COPYING
+  /usr/share/doc/ufraw-0.10/INSTALL
+  /usr/share/doc/ufraw-0.10/README
+  /usr/share/doc/ufraw-0.10/TODO
   /usr/share/man/man1/ufraw.1.gz
   /usr/share/pixmaps/ufraw.png
 
@@ -73,6 +74,12 @@ Files included in the GIMP plugin package:
 ------------------
 
 Port Notes:
+
+----- version 0.10-1 -----
+Version bump.  Enabled Exiv2 support.
+
+----- version 0.9.1-1 -----
+Version bump.
 
 ----- version 0.9-1 -----
 Version bump.
