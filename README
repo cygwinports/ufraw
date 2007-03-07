@@ -7,27 +7,30 @@ basic color management using Little CMS, allowing the user to apply
 color profiles.
 
 Runtime requirements:
-  cygwin-1.5.21-2
-  gimp2-2.2.12-1	(for the gimp plugin only)
-  glib2-2.10.3-1
-  gtk2-x11-2.8.20-1
-  lcms-1.14-1
+  cygwin-1.5.24-2
+  gdk-pixbuf2-2.10.9-1
+  glib2-2.12.9-1
+  gtk2-x11-2.10.9-1
   libexiv2_011-0.11-1
-  libjpeg62-6b-11
-  libtiff5-3.8.2-1
+  libintl8-0.15-1
+  libjpeg62-6b-12
+  liblcms1-1.16-1
+  libtiff5-3.8.2-3
+(gimp2-ufraw)
+  gimp2-2.2.12-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.21-2
-  autoconf2.5-2.60-1
-  automake1.9-1.9.6-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.5-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
   make-3.81-1
-  pkg-config-0.20-1
-  sed-4.1.5-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical website:
   http://ufraw.sourceforge.net/
@@ -38,33 +41,40 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ufraw-0.10-X-src.tar.bz2
+  unpack ufraw-0.11-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ufraw-0.10-X.cygport all
+  cygport ./ufraw-0.11-X.cygport all
 
 This will create:
-  /usr/src/ufraw-0.10-X-src.tar.bz2
-  /usr/src/ufraw-0.10-X.tar.bz2
-  /usr/src/gimp2-ufraw-0.10-X.tar.bz2
+  /usr/src/ufraw-0.11-X-src.tar.bz2
+  /usr/src/ufraw-0.11-X.tar.bz2
+  /usr/src/gimp2-ufraw-0.11-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
+  /etc/gconf/schemas/ufraw.schemas
+  /etc/postinstall/ufraw.sh
+  /etc/preremove/ufraw.sh
   /usr/bin/dcraw.exe
   /usr/bin/nikon-curve.exe
   /usr/bin/ufraw-batch.exe
-  /usr/bin/ufraw-exif.exe
   /usr/bin/ufraw.exe
   /usr/share/applications/ufraw.desktop
-  /usr/share/doc/Cygwin/ufraw-0.10.README
-  /usr/share/doc/ufraw-0.10/COPYING
-  /usr/share/doc/ufraw-0.10/INSTALL
-  /usr/share/doc/ufraw-0.10/README
-  /usr/share/doc/ufraw-0.10/TODO
+  /usr/share/doc/Cygwin/ufraw-0.11.README
+  /usr/share/doc/ufraw-0.11/COPYING
+  /usr/share/doc/ufraw-0.11/README
+  /usr/share/doc/ufraw-0.11/TODO
+  /usr/share/locale/da/LC_MESSAGES/ufraw.mo
+  /usr/share/locale/fr/LC_MESSAGES/ufraw.mo
+  /usr/share/locale/ja/LC_MESSAGES/ufraw.mo
+  /usr/share/locale/pt/LC_MESSAGES/ufraw.mo
+  /usr/share/locale/ru/LC_MESSAGES/ufraw.mo
   /usr/share/man/man1/ufraw.1.gz
+  /usr/share/mime/packages/ufraw-mime.xml
   /usr/share/pixmaps/ufraw.png
 
 Files included in the GIMP plugin package:
@@ -74,6 +84,9 @@ Files included in the GIMP plugin package:
 ------------------
 
 Port Notes:
+
+----- version 0.11-1 -----
+Version bump.  Installed mimetype handlers.
 
 ----- version 0.10-1 -----
 Version bump.  Enabled Exiv2 support.
