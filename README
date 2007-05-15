@@ -8,16 +8,16 @@ color profiles.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  gdk-pixbuf2-2.10.9-1
-  glib2-2.12.9-1
-  gtk2-x11-2.10.9-1
-  libexiv2_011-0.11-1
+  gdk-pixbuf2-2.10.11-1
+  glib2-2.12.12-1
+  gtk2-x11-2.10.11-1
+  libexiv2_0-0.14-1
   libintl8-0.15-1
   libjpeg62-6b-12
   liblcms1-1.16-1
   libtiff5-3.8.2-3
 (gimp2-ufraw)
-  gimp2-2.2.12-1
+  gimp2-2.2.14-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -36,7 +36,7 @@ Canonical website:
   http://ufraw.sourceforge.net/
 
 Canonical download:
-  http://prdownloads.sourceforge.net/ufraw/
+  http://downloads.sourceforge.net/ufraw/
 
 -------------------------------------------
 
@@ -84,6 +84,9 @@ Files included in the GIMP plugin package:
 ------------------
 
 Port Notes:
+
+----- version 0.11-2 -----
+Rebuild against exiv2-0.14.
 
 ----- version 0.11-1 -----
 Version bump.  Installed mimetype handlers.

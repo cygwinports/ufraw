@@ -1,5 +1,5 @@
 category: Gnome Graphics
-requires: cygwin gimp2 gtk2-x11 libexiv2_011 libjpeg62 liblcms1 libtiff5
+requires: cygwin gimp2 gtk2-x11 libexiv2_0 libjpeg62 liblcms1 libtiff5
 sdesc: "GIMP plugin to read and manipulate digital camera RAW images"
 ldesc: "UFRaw is a utility to read and manipulate raw images from digital
 cameras. It can be used by itself or as a GIMP plug-in. It reads raw
