@@ -8,16 +8,16 @@ color profiles.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  gdk-pixbuf2-2.10.11-1
-  glib2-2.12.12-1
-  gtk2-x11-2.10.11-1
-  libexiv2_0-0.14-1
+  gdk-pixbuf2-2.10.14-1
+  glib2-2.12.13-1
+  gtk2-x11-2.10.14-1
+  libexiv2_0-0.15-1
   libintl8-0.15-1
   libjpeg62-6b-12
   liblcms1-1.16-1
   libtiff5-3.8.2-3
 (gimp2-ufraw)
-  gimp2-2.2.14-1
+  gimp2-2.2.17-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -25,7 +25,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.11-1
+  cygport-0.3.5-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   make-3.81-1
@@ -41,21 +41,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ufraw-0.11-X-src.tar.bz2
+  unpack ufraw-0.12-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ufraw-0.11-X.cygport all
+  cygport ./ufraw-0.12-X.cygport all
 
 This will create:
-  /usr/src/ufraw-0.11-X-src.tar.bz2
-  /usr/src/ufraw-0.11-X.tar.bz2
-  /usr/src/gimp2-ufraw-0.11-X.tar.bz2
+  /usr/src/ufraw-0.12-X-src.tar.bz2
+  /usr/src/ufraw-0.12-X.tar.bz2
+  /usr/src/gimp2-ufraw-0.12-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(ufraw)
   /etc/gconf/schemas/ufraw.schemas
   /etc/postinstall/ufraw.sh
   /etc/preremove/ufraw.sh
@@ -64,26 +65,27 @@ Files included in the binary package:
   /usr/bin/ufraw-batch.exe
   /usr/bin/ufraw.exe
   /usr/share/applications/ufraw.desktop
-  /usr/share/doc/Cygwin/ufraw-0.11.README
-  /usr/share/doc/ufraw-0.11/COPYING
-  /usr/share/doc/ufraw-0.11/README
-  /usr/share/doc/ufraw-0.11/TODO
+  /usr/share/doc/Cygwin/ufraw-0.12.README
+  /usr/share/doc/ufraw-0.12/COPYING
+  /usr/share/doc/ufraw-0.12/README
+  /usr/share/doc/ufraw-0.12/TODO
   /usr/share/locale/da/LC_MESSAGES/ufraw.mo
   /usr/share/locale/fr/LC_MESSAGES/ufraw.mo
   /usr/share/locale/ja/LC_MESSAGES/ufraw.mo
   /usr/share/locale/pt/LC_MESSAGES/ufraw.mo
   /usr/share/locale/ru/LC_MESSAGES/ufraw.mo
   /usr/share/man/man1/ufraw.1.gz
-  /usr/share/mime/packages/ufraw-mime.xml
   /usr/share/pixmaps/ufraw.png
 
-Files included in the GIMP plugin package:
-
+(gimp2-ufraw)
   /usr/lib/gimp/2.0/plug-ins/ufraw-gimp.exe
 
 ------------------
 
 Port Notes:
+
+----- version 0.12-1 -----
+Version bump.
 
 ----- version 0.11-2 -----
 Rebuild against exiv2-0.14.
