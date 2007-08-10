@@ -41,16 +41,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ufraw-0.12-X-src.tar.bz2
+  unpack ufraw-0.12.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ufraw-0.12-X.cygport all
+  cygport ./ufraw-0.12.1-X.cygport all
 
 This will create:
-  /usr/src/ufraw-0.12-X-src.tar.bz2
-  /usr/src/ufraw-0.12-X.tar.bz2
-  /usr/src/gimp2-ufraw-0.12-X.tar.bz2
+  /usr/src/ufraw-0.12.1-X-src.tar.bz2
+  /usr/src/ufraw-0.12.1-X.tar.bz2
+  /usr/src/gimp2-ufraw-0.12.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -65,10 +65,10 @@ Files included in the binary packages:
   /usr/bin/ufraw-batch.exe
   /usr/bin/ufraw.exe
   /usr/share/applications/ufraw.desktop
-  /usr/share/doc/Cygwin/ufraw-0.12.README
-  /usr/share/doc/ufraw-0.12/COPYING
-  /usr/share/doc/ufraw-0.12/README
-  /usr/share/doc/ufraw-0.12/TODO
+  /usr/share/doc/Cygwin/ufraw-0.12.1.README
+  /usr/share/doc/ufraw-0.12.1/COPYING
+  /usr/share/doc/ufraw-0.12.1/README
+  /usr/share/doc/ufraw-0.12.1/TODO
   /usr/share/locale/da/LC_MESSAGES/ufraw.mo
   /usr/share/locale/fr/LC_MESSAGES/ufraw.mo
   /usr/share/locale/ja/LC_MESSAGES/ufraw.mo
@@ -83,6 +83,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.12.1-1 -----
+Version bump.
 
 ----- version 0.12-1 -----
 Version bump.
