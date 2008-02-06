@@ -7,26 +7,25 @@ basic color management using Little CMS, allowing the user to apply
 color profiles.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  gdk-pixbuf2-2.12.2-1
-  glib2-2.14.4-1
-  gtk2-x11-2.12.2-1
-  libexiv2_0-0.15-1
+  cygwin-1.5.25-7
+  gdk-pixbuf2-2.12.5-1
+  glib2-2.14.5-1
+  gtk2-x11-2.12.5-1
+  libexiv2_2-0.16-1
   libintl8-0.15-1
   libjpeg62-6b-12
   liblcms1-1.17-1
   libtiff5-3.8.2-3
 (gimp2-ufraw)
-  gimp2-2.2.17-1
+  gimp2-2.4.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.10-1.10-1
   binutils-20060817-1
   cygport-0.3.7-1
-  gawk-3.1.5-4
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   make-3.81-1
   pkg-config-0.21-1
@@ -86,6 +85,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.13-2 -----
+Rebuilt against exiv2-0.16.
 
 ----- version 0.13-1 -----
 Version bump.
