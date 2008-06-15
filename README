@@ -7,26 +7,33 @@ basic color management using Little CMS, allowing the user to apply
 color profiles.
 
 Runtime requirements:
-  cygwin-1.5.25-7
-  gdk-pixbuf2-2.12.5-1
-  glib2-2.14.5-1
-  gtk2-x11-2.12.5-1
-  libexiv2_2-0.16-1
+  cygwin-1.5.25-11
+  gdk-pixbuf2-2.12.9-1
+  glib2-2.16.3-1
+  gtk2-x11-2.12.9-1
+  gtkimageview-1.6.1-1
+  libbz2_1-1.0.5-2
+  libexiv2_4-0.17-1
   libintl8-0.15-1
   libjpeg62-6b-12
   liblcms1-1.17-1
+  libpng12-1.2.29-1
   libtiff5-3.8.2-3
+  zlib-1.2.3-2
+(cinepaint-ufraw)
+  cinepaint-0.22.1-1
 (gimp2-ufraw)
   gimp2-2.4.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.61-1
-  automake1.10-1.10-1
+  automake1.10-1.10.1-1
   binutils-20060817-1
-  cygport-0.3.7-1
+  cygport-0.3.11-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
+  gnome-common-2.20.0-2
   make-3.81-1
   pkg-config-0.21-1
   sed-4.1.5-2
@@ -49,6 +56,7 @@ Build instructions:
 This will create:
   /usr/src/ufraw-0.13-X-src.tar.bz2
   /usr/src/ufraw-0.13-X.tar.bz2
+  /usr/src/cinepaint-ufraw-0.13-X.tar.bz2
   /usr/src/gimp2-ufraw-0.13-X.tar.bz2
 
 -------------------------------------------
@@ -64,7 +72,6 @@ Files included in the binary packages:
   /usr/bin/ufraw-batch.exe
   /usr/bin/ufraw.exe
   /usr/share/applications/ufraw.desktop
-  /usr/share/doc/Cygwin/ufraw-0.13.README
   /usr/share/doc/ufraw-0.13/COPYING
   /usr/share/doc/ufraw-0.13/README
   /usr/share/doc/ufraw-0.13/TODO
@@ -79,12 +86,18 @@ Files included in the binary packages:
   /usr/share/man/man1/ufraw.1.gz
   /usr/share/pixmaps/ufraw.png
 
+(cinepaint-ufraw)
+  /usr/lib/cinepaint/0.22-1/plug-ins/ufraw-cinepaint.exe
+
 (gimp2-ufraw)
   /usr/lib/gimp/2.0/plug-ins/ufraw-gimp.exe
 
 ------------------
 
 Port Notes:
+
+----- version 0.13-3 -----
+Rebuilt against exiv2-0.17.  Added cinepaint plugin.
 
 ----- version 0.13-2 -----
 Rebuilt against exiv2-0.16.

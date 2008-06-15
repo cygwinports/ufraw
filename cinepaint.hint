@@ -1,7 +1,7 @@
 category: Gnome Graphics
-requires: cygwin gimp2 glib2 gdk-pixbuf2 gtk2-x11 gtkimageview libbz2_1 libexiv2_4 libintl8 libjpeg62 liblcms1 libpng12 libtiff5 zlib
+requires: cygwin cinepaint glib2 gdk-pixbuf2 gtk2-x11 gtkimageview libbz2_1 libexiv2_4 libintl8 libjpeg62 liblcms1 libpng12 libtiff5 zlib
 external-source: ufraw
-sdesc: "GIMP plugin to read and manipulate digital camera RAW images"
+sdesc: "CinePaint plugin to read and manipulate digital camera RAW images"
 ldesc: "UFRaw is a utility to read and manipulate raw images from digital
 cameras. It can be used by itself or as a GIMP plug-in. It reads raw
 images using Dave Coffin's raw conversion utility DCRaw. And it supports
