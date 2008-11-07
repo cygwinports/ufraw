@@ -4,10 +4,11 @@ DESCRIPTION="Utility to read and manipulate digital camera RAW images"
 HOMEPAGE="http://ufraw.sourceforge.net/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
-CYGCONF_ARGS="--enable-extras --enable-mime"
-
 PKG_NAMES="${PN} gimp2-${PN} cinepaint-${PN}"
 PKG_HINTS="setup gimp cinepaint"
 PKG_CONTENTS[0]='etc/ usr/bin/ usr/share/'
 PKG_CONTENTS[1]='usr/lib/gimp/'
 PKG_CONTENTS[2]='usr/lib/cinepaint/'
+
+CYGCONF_ARGS="--enable-extras --enable-mime"
+MAKEOPTS+=" schemasdir=/etc/gconf/schemas"
