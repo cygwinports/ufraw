@@ -8,12 +8,12 @@ color profiles.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  gdk-pixbuf2-2.12.12-1
-  glib2-2.16.6-1
-  gtk2-x11-2.12.12-1
-  gtkimageview-1.6.1-1
   libbz2_1-1.0.5-2
-  libexiv2_4-0.17.1-1
+  libexiv2_5-0.18-1
+  libgdk_pixbuf2.0_0-2.14.6-1
+  libglib2.0_0-2.18.3-1
+  libgtk2.0_0-2.14.6-1
+  libgtkimageview0-1.6.3-1
   libintl8-0.17-2
   libjpeg62-6b-12
   liblcms1-1.17-1
@@ -28,12 +28,12 @@ Runtime requirements:
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-1
-  automake1.10-1.10.1-1
+  automake1.10-1.10.1-2
   binutils-20080624-2
-  cygport-0.4.2-1
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-2
+  gnome-common-2.24.0-1
   make-3.81-1
   pkg-config-0.23a-2
   sed-4.1.5-2
@@ -47,17 +47,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ufraw-0.14.1-X-src.tar.bz2
+  unpack ufraw-0.15-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ufraw-0.14.1-X.cygport all
+  cygport ./ufraw-0.15-X.cygport all
 
 This will create:
-  /usr/src/ufraw-0.14.1-X-src.tar.bz2
-  /usr/src/ufraw-0.14.1-X.tar.bz2
-  /usr/src/cinepaint-ufraw-0.14.1-X.tar.bz2
-  /usr/src/gimp2-ufraw-0.14.1-X.tar.bz2
+  /usr/src/ufraw-0.15-X-src.tar.bz2
+  /usr/src/ufraw-0.15-X.tar.bz2
+  /usr/src/cinepaint-ufraw-0.15-X.tar.bz2
+  /usr/src/gimp2-ufraw-0.15-X.tar.bz2
 
 -------------------------------------------
 
@@ -72,10 +72,10 @@ Files included in the binary packages:
   /usr/bin/ufraw-batch.exe
   /usr/bin/ufraw.exe
   /usr/share/applications/ufraw.desktop
-  /usr/share/doc/ufraw-0.14.1/COPYING
-  /usr/share/doc/ufraw-0.14.1/ChangeLog
-  /usr/share/doc/ufraw-0.14.1/README
-  /usr/share/doc/ufraw-0.14.1/TODO
+  /usr/share/doc/ufraw-0.15/COPYING
+  /usr/share/doc/ufraw-0.15/ChangeLog
+  /usr/share/doc/ufraw-0.15/README
+  /usr/share/doc/ufraw-0.15/TODO
   /usr/share/locale/ca/LC_MESSAGES/ufraw.mo
   /usr/share/locale/cs/LC_MESSAGES/ufraw.mo
   /usr/share/locale/da/LC_MESSAGES/ufraw.mo
@@ -104,6 +104,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.15-1 -----
+Version bump.
 
 ----- version 0.14.1-1 -----
 Version bump.
