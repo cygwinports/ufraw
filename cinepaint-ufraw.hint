@@ -1,9 +1,0 @@
-category: Gnome Graphics
-requires: cinepaint libbz2_1 libcfitsio3 libexiv2_11 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgomp1 libgtk2.0_0 libgtkimageview0 libintl8 libjpeg8 liblcms1 liblensfun0 libpng14 libstdc++6 libtiff5 zlib0
-external-source: ufraw
-sdesc: "CinePaint plugin to read and manipulate digital camera RAW images"
-ldesc: "UFRaw is a utility to read and manipulate raw images from digital
-cameras. It can be used by itself or as a GIMP plug-in. It reads raw
-images using Dave Coffin's raw conversion utility DCRaw. And it supports
-basic color management using Little CMS, allowing the user to apply
-color profiles."
