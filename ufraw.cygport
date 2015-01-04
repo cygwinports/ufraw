@@ -1,8 +1,8 @@
 inherit gnome2
 
 NAME="ufraw"
-VERSION=0.19.2
-RELEASE=2
+VERSION=0.20
+RELEASE=1
 CATEGORY="Graphics"
 SUMMARY="Utility to read and manipulate digital camera RAW images"
 DESCRIPTION="UFRaw is a utility to read and manipulate raw images from digital
