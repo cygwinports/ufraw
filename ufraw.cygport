@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="ufraw"
-VERSION=0.20
+VERSION=0.21
 RELEASE=1
 CATEGORY="Graphics"
 SUMMARY="Utility to read and manipulate digital camera RAW images"
@@ -11,6 +11,7 @@ using Dave Coffin's raw conversion utility DCRaw. And it supports basic color
 management using Little CMS, allowing the user to apply color profiles."
 HOMEPAGE="http://ufraw.sourceforge.net/"
 SRC_URI="mirror://sourceforge/ufraw/ufraw-${VERSION}.tar.gz"
+PATCH_URI="http://pkgs.fedoraproject.org/cgit/ufraw.git/plain/ufraw-0.21-CVE-2015-3885.patch"
 
 PKG_NAMES="${NAME} gimp-${NAME}" # cinepaint-${PN}"
 ufraw_CONTENTS='etc/ usr/bin/ usr/share/'
